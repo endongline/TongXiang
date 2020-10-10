@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>bootstrap项目实战</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-maizi.css"/>
+    <script type="text/javascript" src="js/laydate/laydate.js"></script>
+
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.php" class="navbar-brand">同享发票管理</a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+                <li><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+                <li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
+                <li class="active"><a href="content_post.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;发票录入</a></li>
+                <li class="#"><a href="content_update.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;修改发票</a></li>
+<!--                <li><a href="tag.php"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        admin
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="index.php"><span class="glyphicon glyphicon-screenshot"></span>&nbsp;&nbsp;前台首页</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户中心</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+                    </ul>
+                </li>
+                <li><a href="#bbs"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+
+    </div>
+</nav>
+<!--导航-->
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1>内容管理</h1>
+            </div>
+            <ul class="nav nav-tabs">
+
+                <li class="active">
+                    <a href="content_post.html">添加票据</a>
+                </li>
+            </ul>
+            <form action="#" class="mar_t15">
+                <div class="tx_title">
+                    <div class="headerMiddle">
+                        <h3>开票申请</h3>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <table class="table table-bordered">
+                    <tr>
+                        <td width="10%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">开票日期:</td>
+                        <td width="23%"><input type="text"  class="laydate-icon span1-1" id="Calendar" placeholder="请输入日期"  /></td>
+                        <td width="10%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">开票人:</td>
+                        <td width="23%"><input type="text" name="" id="" class="span1-1"  /></td>
+                        <td width="10%" align="right" nowrap="nowrap" bgcolor="#f1f1f1">客&nbsp&nbsp户:</td>
+                        <td><input type="text" name="" id="" class="span1-1"  /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">余&nbsp&nbsp额:</td>
+                        <td><input type="text" name="" id=""  class="span1-1" /></td>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">抬头:</td>
+                        <td><input type="text" name="" id=""  class="span1-1" /></td>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">开票金额:</td>
+                        <td><input type="text" name="" id=""  class="span1-1" /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">识别号:</td>
+                        <td><input type="text" name="input" id="input"  class="span1-1" /></td>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">开户行:</td>
+                        <td><input type="text" name="input2" id="input2"  class="span1-1" /></td>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">帐号:</td>
+                        <td><input type="text" name="input3" id="input3" class="span1-1"  /></td>
+                    </tr>
+                    <tr>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">电话:</td>
+                        <td><input type="text" name="input" id="input4"  class="span1-1" /></td>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">地址:</td>
+                        <td><input type="text" name="input2" id="input5"  class="span1-1" /></td>
+                        <td align="right" nowrap="nowrap" bgcolor="#f1f1f1">数量:</td>
+<!--                        <td><input type="text" name="input3" id="input6" class="span1-1"  /></td>-->
+                        <td ><input type="text" name="input5" id="input6" class="span1 text-center" value="1" /> 张</td>
+                    </tr>
+                </table>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">全局置顶
+                    </label>
+                    <button type="submit" class="btn btn-default pull-right">提交票据</button>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2019-2020&nbsp;&nbsp;www.tongxinag.com&nbsp;&nbsp;琼ICP备******号-1
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    !function(){
+        laydate.skin('molv');
+        laydate({elem: '#Calendar'});
+    }();
+
+</script>
+</body>
+</html>

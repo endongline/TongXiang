@@ -1,0 +1,75 @@
+@charset "UTF-8";
+html{overflow-y:hidden;}
+body{margin:0;height:100%;}
+/*a:active,a:hover{outline:0}*/
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+input,select,button{outline:none;}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
+img{vertical-align:middle;border:0}
+html{font-size:50px;-webkit-tap-highlight-color:transparent;height:100%;min-width:320px;overflow-x:hidden}
+body{font-family:"Microsoft YaHei";font-size:.28em;line-height:1;color: #333333;background-color:white;}
+h6{margin-top:0;margin-bottom:0}
+button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
+a{color:#ffffff;text-decoration:none;outline:0}
+a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+a.react,label.react{display:block;color:inherit;height:100%}
+a.react.react-active,a.react:active,label.react:active{background:rgba(0,0,0,.1)}
+ul{margin:0;padding:0;list-style-type:none}
+hr{margin-top:.28rem;margin-bottom:.28rem;border:0;border-top:1px solid #DDD8CE}
+h6,p{line-height:1.41;text-align:justify;margin:-.2em 0;word-break:break-all}
+small,weak{color:#666}
+::-webkit-input-placeholder {color:#999;line-height:inherit;}
+:-moz-placeholder {color:#999;line-height:inherit;}
+::-moz-placeholder {color:#999;line-height:inherit;}
+
+/*other public*/
+
+.center{text-align:center;}
+.fl{float:left;}
+.fr{float:right;}
+.mtb{margin:5px 0;overflow:hidden;}
+.mlr{margin:0 5px;overflow:hidden;}
+/*public:rtContent*/
+.rt_wrap{margin-left:10px;margin-right:10px;height:100%;position:relative;}
+.rt_content{margin-bottom:80px;margin-right:8px;overflow:hidden;}
+.textWhite{color:white;}
+.link_btn{border:1px #139667 solid;border-radius:2px;background:#19a97b;color:white;padding:8px 15px;display:inline-block;cursor:pointer;}
+.link_btn:hover{background:#11a274;border:1px #0e8f61 solid;}
+.link_btn:active{background:#0c9c6e;border:1px #0e8f61 solid;}
+.textbox{border:1px #139667 solid;height:26px;line-height:26px;padding:5px;font-size:12px; vertical-align:middle;}
+.textbox_295{width:295px;}
+.textbox_225{width:225px;}
+.select{padding:0 5px;height:38px;font-size:12px;border:1px #139667 solid;vertical-align:middle;-webkit-appearance:button;appearance: button;}
+.group_btn{border:1px #139667 solid;background:#19a97b;color:white;padding:0 15px;height:38px;cursor:pointer;display:inline-block;vertical-align:middle;}
+.group_btn:hover{background:#11a274;border:1px #0e8f61 solid;}
+.group_btn:active{background:#0c9c6e;border:1px #0e8f61 solid;}
+.page_title{height:40px;line-height:40px;border-bottom:1px #b6b6b6 solid;margin:10px 0;text-align: center;}
+.page_title h2{font-size:22px;font-weight:bold;padding-top: 8px;}
+.page_title .top_rt_btn{display:inline-block;height:30px;line-height:30px;padding:0 15px;border:1px #d2d2d2 solid;background:#f8f8f8;color:#19a97b; vertical-align:middle;cursor:pointer;}
+.table{width:100%;margin:5px 0;}
+.table th{border:1px #d2d2d2 solid;height:40px;line-height:40px;}
+.table td{border:1px #d2d2d2 solid;padding:10px 0px;position:relative;}
+.table td p{margin:5px 0;line-height:1.3;}
+.table td mark{color:red;line-height:1.3;}
+.table tr:nth-child(odd){background:#f8f8f8;}
+.table tr:hover{background:#f9f9f9;}
+.table td a{color:#19a97b;margin:0 5px;cursor:pointer;}
+.table td .full_link_td{display:block;width:100%;height:100%;border:none;outline:none;position:absolute;top:0;left:0;text-align:center;margin:0;font-size:20px;font-weight:bold;}
+.table td .full_link_td:hover{background:#f4f4f4;color:#019163;}
+.table td .inner_btn{background:#F9F;color:white;padding:5px 8px;border-radius:2px;}
+.table td .inner_btn:hover{background:#ffa4ff;color:#f8f8f8;}
+.table td .cut_title{width:265px;}
+.table td .link_icon{font-size:24px;font-family:'adminthemesregular';color:#19a97b;}
+.table td .link_icon:hover{color:#019163;}
+.paging{margin:8px 0;overflow:hidden;text-align:right;}
+.paging a{background:#19a97b;border:1px #139667 solid;color:white;padding:5px 8px;display:inline-block;cursor:pointer;}
+.paging a:hover{background:#11a274;border:1px #0e8f61 solid;}
+.paging a:active{background:#17a578;border:1px #0e8f61 solid;}
+
+.table tr,.table td{
+    white-space: nowrap;
+    text-align: center;
+    table-layout: fixed;
+}

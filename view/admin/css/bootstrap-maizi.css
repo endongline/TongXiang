@@ -1,0 +1,322 @@
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+li{list-style: none;}
+/*进度条*/
+.progress {
+    margin-bottom: 15px;
+}
+/*头像*/
+.wh64{
+    width: 64px;
+    height: 64px;
+    border-radius:50% ;
+}
+/*边距*/
+.mar_t15{
+    margin-top: 15px;
+}
+/*padding*/
+.pad0{
+    padding: 0;
+}
+/*page.class-header*/
+.page-header{
+    margin-top: 0;
+}
+.page-header h1{
+    margin: 0;
+    font-size: 16px;
+}
+/*uesr_search*/
+.uesr_search{
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-top: none;
+}
+/*tag*/
+.taglist{
+    padding-top: 15px;
+}
+.taglist .alert{
+    margin: 0 15px 15px 0;
+}
+
+.span1 {
+    width: 46px;
+}
+
+/*footer*/
+footer{
+    font-weight: 400;
+    text-align: center;
+    padding:20px ;
+}
+.table > thead > tr > th{
+    white-space:nowrap;
+    text-align: center;
+}
+
+.lebox{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #000000;
+    height: 550px;
+}
+.tx_title{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid red;*/
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.headerMiddle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*text-align: center;*/
+}
+.headerMiddle h3{
+    /*padding-top: 20px;*/
+    font-size:30px;
+    color: #9c5223;
+    font-family: 'kaiti';
+    /*margin: 5px 12px;*/
+}
+.table{table-layout: fixed;}
+td {
+    text-align: center;
+    white-space:nowrap;overflow: hidden;text-overflow: ellipsis;
+}
+.table tr td:last-child{
+    z-index: 9999;
+    overflow: visible;
+    white-space:nowrap;text-overflow: ellipsis;
+}
+
+
+
+.line{
+    height: 5px;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    width: 20%;
+    margin-bottom: 10px;
+}
+/*申请单头 end*/
+
+/*日期输入框*/
+.date_table >li{
+    display: inline-block;
+    font-size:20px;
+    color: #0E69C7;
+    font-family: 'kaiti';
+    /*border: 1px skyblue solid;*/
+}
+.date_table input{
+    height: 30px;
+    /*padding: 5px 10px;*/
+    font-size: 16px;
+    line-height: 1.5;
+    border-bottom: skyblue 1px solid;
+
+}
+.date_table >input[type="text"]{
+    width: 128px;
+    font-size: 20px;
+}
+
+.date_table >input[type="date"]{
+    padding: 20px;
+}
+
+.tx_data_Lin{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9c5223;
+}
+.tx_Lin_Lf,.tx_Lin_Lr{
+    width: 50%;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    /*background-color: lightgrey;*/
+}
+.tx_Lin_Lf{
+    margin-right: 5px;
+}
+.tx_Lin_Lr{
+    margin-left:5px;
+}
+.tx_Lin_Lf li{
+    width: 100%;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    justify-content:flex-start;
+}
+.li1,.li2,.li3,.li4,.li5,.li6{
+    width: 20px;
+    padding: 0 5px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #9c5223;
+}
+.li1,.li2,.li3,.li4,.li5{
+    border-right: 1px solid #9c5223;
+    border-bottom:1px solid #9c5223 ;
+}
+.li6{
+    border-right: 1px solid #9c5223;
+}
+.tx_Lin_Lf input{
+    height: 39px;
+    line-height: 39px;
+    font-size: 16px;
+    margin-left:10px;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    padding:5px;/*表单输入框内文字居中*/
+    vertical-align:middle;/*表单控件上下居中对齐*/
+}
+.li1 input{
+    width: 15%;
+}
+.li2 input{
+    width: 90%;
+}
+.li3 input{
+    width: 20%;
+}
+.tx_Lin_Lf input[type="text"]{
+    BACKGROUND-COLOR: transparent;
+}
+
+.tx_Lin_Lr > li{
+    width: 100%;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    justify-content:flex-start;
+}
+.li7,.li8,.li9,.li10,.li11,.li12{
+    width: 20px;
+    padding: 0 5px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #9c5223;
+}
+.li7,.li8,.li9,.li10,.li11{
+    border-left: 1px solid #9c5223;
+    border-bottom:1px solid #9c5223 ;
+}
+.li12{
+    border-left: 1px solid #9c5223;
+}
+
+.tx_Lin_Lr input{
+    width: 90%;
+    height: 39px;
+    line-height: 39px;
+    font-size: 16px;
+    margin-left:10px;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    padding:5px;/*表单输入框内文字居中*/
+    vertical-align:middle;/*表单控件上下居中对齐*/
+}
+.li8 input{
+    width: 40%;
+}
+.li10 input{
+    width: 40%;
+}.li12 input{
+     width: 40%;
+ }
+
+/* MySite2*/
+.tx_inpu{
+    width: 1190px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border: 1px dashed darkgrey ;
+    border-radius:30px;
+    /*background: #50a3a2;*/
+}
+.tx_lf,.tx_lr{
+    width: 49%;
+}
+.tx_lf{float: left;}
+.tx_lr{float: right;}
+.tx_lf>li,.tx_lr>li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left:20px;
+    margin-top: 10px;
+    color: #0E69C7;
+    font-family: 'kaiti';
+    font-weight: bold;
+}
+.tx_lf li input[type="date"]{
+    width:148px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+    height: 30px;
+    border-bottom:2px solid darkgrey;
+    margin: 0;
+}
+.tx_lf li input[type="text"] {
+    width: 80%;
+}.tx_lr li input[type="text"]{
+     width: 80%;
+ }
+.tx_lf li input[type="text"],.tx_lr li input[type="text"]{
+    height: 30px;
+    padding: 0px 5px;
+    border-bottom:1px solid darkgrey;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.tx_lf>.tx_drea input[type="text"],.tx_lf>.tx_curre input[type="text"],.tx_lf>.tx_gafiao1 input[type="text"],.tx_lr>.tx_gafiao2 input[type="text"]{
+    width: 148px;
+}
+.tx_lr>.tx_dentify input[type="text"],.tx_lr>.tx_photo input[type="text"],.tx_lr>.tx_zh input[type="text"]{
+    width: 188px;
+}
+.dj_bonnter{
+    position: relative;
+}
+.tx_button button{
+    right: 260px;
+}
+.tx_rebutton button{
+    right:96px ;
+}
+.tx_button button,.tx_rebutton button{
+    position: absolute;
+    width:120px;
+    height:38px;
+    bottom:-384px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-indent: 10px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>【同享发票管理】本地 免费 高效</title>
+    <meta name="Keywords" content="同享发票管理系统">
+    <meta name="Description" content="同享发票信息管理网">
+    <link rel="stylesheet" href="view/home/css/base.css">
+    <link rel="stylesheet" href="view/home/css/index.css">
+    <link rel="stylesheet" href="view/home/css/style2.css">
+</head>
+<body>
+<div class="haed clearfix">
+    <!--上面的容器-->
+    <div class="bar_left f_left">
+        <h1><a href="">同享发票管理系统</a></h1>
+    </div>
+    <div class="bar_login f_right">
+        <ul>
+            <li><a href="#" target="_self" tongji_tag="pc_topbar_log_login">登录</a></li>
+            <li><span class="gap">|</span></li>
+            <li><a href="#" target="_self" tongji_tag="pc_topbar_log_reg">注册</a></li>
+        </ul>
+    </div>
+</div>
+    <!--中间的容器-->
+    <div class="lebox" >
+        <div class="tx_title">
+            <div class="headerMiddle">
+                <h3>开票申请</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+        <form name="form1" action="insert.php" method="post">
+            <div id="tx_inpu" class="tx_inpu">
+                <ul class="tx_lf">
+                    <li class="tx_date"><label id="" for="tx_date">开票日期:</label> <input name="tx_date" type="date"  id="date_info"   placeholder="请输入时间"/></li>
+                    <li class="tx_drea"><label for="tx_drea">开&nbsp票&nbsp人:</label><input  name="tx_drea" type="text" value=""  aria-required='true' /></li>
+                    <li class="tx_client"><label for="tx_client">客&nbsp&nbsp&nbsp&nbsp户:</label><input  name="tx_client" type="text" value=""  aria-required='true' /></li>
+                    <li class="tx_curre"><label for="tx_curre">余&nbsp&nbsp&nbsp&nbsp额:</label><input  name="tx_curre" type="text" value=""  aria-required='true' /></li>
+                    <li class="tx_order"><label for="tx_order">抬&nbsp&nbsp&nbsp&nbsp头:</label><input  name="tx_order" type="text" value=""  aria-uired='true' /></li>
+                    <li class="tx_gafiao1"><label for="tx_gafiao1">开票金额:</label><input  name="tx_gafiao1" type="text" value=""  aria-uired='true' /></li>
+                </ul>
+                <div class="tx_cenline"></div>
+                <ul class="tx_lr">
+                    <li class="tx_dentify"><label for="tx_dentify">识&nbsp别&nbsp号:</label><input  name="tx_dentify" type="text" value=""  aria-required='true' /></li>
+                    <li class="tx_obank"><label for="tx_obank">开&nbsp户&nbsp行:</label><input  name="tx_obank" type="text" value=""  aria-required='true' /></li>
+                    <li class="tx_zh"><label for="tx_zh">帐&nbsp&nbsp&nbsp&nbsp号:</label><input  name="tx_zh" type="text" value=""  aria-required='true' /></li>
+                    <li class="tx_photo"><label for="tx_add">电&nbsp&nbsp&nbsp&nbsp话:</label><input  name="tx_photo" type="text" value=""  aria-required='true'/></li>
+                    <li class="tx_add"><label for="tx_add">地&nbsp&nbsp&nbsp&nbsp址:</label><input  name="tx_add" type="text" value=""  aria-required='true'/></li>
+                    <li class="tx_gafiao2"><label for="tx_gafiao2">开票金额:</label><input  name="tx_gafiao2" type="text" value=""  aria-required='true'/></li>
+
+                </ul>
+                <div class="dj_bonnter">
+                    <p class="tx_button"><button name="submit" id="button" type="submit" value="提交" onclick="check(form1);">提交</button> </p>
+                    <p class="tx_rebutton"><button  name="reset" type="reset" value="重置">重置</button></p>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+        <section class="rt_wrap content mCustomScrollbar">
+            <div class="rt_content">
+                <div class="page_title">
+                    <h2 class="">同享发票列表</h2>
+<!--                    <a class="fr top_rt_btn add_icon">添加发票</a>-->
+                </div>
+                <section class="mtb">
+                    <select class="select">
+                        <option>发票状态</option>
+                        <option>待开</option>
+                        <option>已开</option>
+                        <option>待评价</option>
+                    </select>
+                    <input type="text" class="textbox textbox_225" placeholder="输入订单编号或收件人姓名/电话..."/>
+                    <input type="button" value="查询" class="group_btn"/>
+                </section>
+                <table class="table">
+                    <tr >
+                        <th>订单编号</th>
+                        <th >开票日期</th>
+                        <th>开票人</th>
+                        <th>客户</th>
+                        <th>余额</th>
+                        <th>抬头</th>
+                        <th>识别号</th>
+                        <th>开户行</th>
+                        <th>帐号</th>
+                        <th>地址</th>
+                        <th>电话</th>
+                        <th>开票金额</th>
+                        <th>操作员</th>
+                    </tr>
+                    <tr>
+                        <td class='center' >01</td>
+                        <td title='' >2020/06/18</td>
+                        <td >韩燕柳</td>
+                        <td class='center'  title=''>阳光联盟云南昆明海之旅/杜培国（散+商旅）</td>
+                        <td class='center'  title=''>36000</td>
+                        <td><strong class='rmb_icon'>昆明康辉旅行社有限公司永信分公司</strong></td>
+                        <td>91530000086393983Y</td>
+                        <td>交通银行昆明护国支行</td>
+                        <td>531078157018170159205</td>
+                        <td>云南省昆明市永安路70号三楼</td>
+                        <td>0871-63522470</td>
+                        <td>25000</td>
+                        <td>ID</td>
+
+<!--                        <td class='center'>-->
+<!--                            <a href='#' title='查看订单' class='link_icon' target='_blank'>&#118;</a>-->
+<!--                            <a href='#' title='删除' class='link_icon'>&#100;</a>-->
+<!--                        </td>-->
+                    </tr>
+
+                </table>
+
+                <aside class="paging">
+                   <a href='FPlist.php?p=1' target='_Self' >首页</a> |
+                    <a href='FPlist.php?p={$prevpage}'target='_Self' >上一页</a> |
+                    <a href='FPlist.php?p={$nextpage}' target='_Self'>下一页</a> |
+                    <a href='FPlist.php?p={$totpage}' target='_Self'>末页</a>
+                </aside>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!--底部的容器-->
+    <div class="boottombox"></div>
+</div>
+</div>
+
+</body>
+</html>
